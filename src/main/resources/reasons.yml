@@ -1,0 +1,32 @@
+Плагин разработан Денисом Тимофеевым:
+  Вконтакте: https://vk.com/M0odi
+  Telegram: https://t.me/M0odiX
+
+Единицы времени:
+  MINUTE: Минута
+  HOUR: Час
+  DAY: День
+  WEEK: Неделя
+  MONTH: Месяц
+  YEAR: Год
+
+REASONS:
+  1|1:
+    DESCRIPTION: "Стороннее ПО"
+    ALIASES:
+      - "KICK"
+      - "BAN"
+      - "TEMPBAN"
+    TIME: 60
+    TIME-UNIT: MONTH
+  1|2:
+    DESCRIPTION: "Оскорбление администрации"
+    ALIASES:
+      - "MUTE"
+      - "TEMPMUTE"
+    TIME: 1
+    TIME-UNIT: HOUR
+  1|3:
+    DESCRIPTION: "Попрошайничество"
+    ALIASES:
+      - "KICK"

@@ -1,0 +1,127 @@
+Плагин разработан Денисом Тимофеевым:
+  Вконтакте: https://vk.com/M0odi
+  Telegram: https://t.me/M0odiX
+
+prefix: "&7[&bM0odi&cBans&7]"
+
+commands:
+  command-not-exists: "%prefix% &7Такой команды не существует"
+  not-perms: "%prefix% &7У Вас нет прав на выполнение этой команды"
+  your-self-usage: "%prefix% &7Вы не можете использовать данную команду на себя"
+  player-not-online: "%prefix% &7Данный игрок не в сети"
+  you-low-priority: "%prefix% &7Вы не можете применить наказание к этому игроку, т.к его приоритет выше вашего"
+  is-priority-player: "%prefix% &7У этого игрока приоритет от наказаний, вы не можете применить к нему наказание."
+  already-banned: "%prefix% &7Данный игрок уже забанен"
+  already-unbanned: "%prefix% &7Данный игрок не забанен"
+  already-muted: "%prefix% &7Данный игрок уже замучен"
+  already-unmuted: "%prefix% &7Данный игрок не в муте"
+
+reasons:
+  reason-not-exists: "%prefix% &7Такого правила не существует"
+  reason-not-allowed-for-this-punishment: "%prefix% &7Вы не можете применить данное наказание по этой причине."
+
+info:
+  kick: "&c/kick &7[&cНик Игрока&7] &7[&cПричина&7] &7- кикнуть игрока с сервера"
+  ban: "&c/ban &7[&cНик Игрока&7] &7[&cПричина&7] &7- перманентно заблокировать игрока"
+  tempban: "&c/tempban &7[&cНик Игрока&7] &7[&cПричина&7] &7- временно заблокировать игрока"
+  unban: "&c/unban &7[&cНик Игрока&7] &7- разблокировать игрока"
+  mute: "&c/mute &7[&cНик Игрока&7] &7[&cПричина&7] &7- перманентно замутить игрока"
+  tempmute: "&c/tempmute &7[&cНик Игрока&7] &7[&cПричина&7] &7- временно замутить игрока"
+  unmute: "&c/unmute &7[&cНик Игрока&7] &7- размутить игрока"
+  check: "&c/check &7[&cНик Игрока&7] &7- посмотреть информацию о игроке"
+
+usages:
+  usage-prefix: "&7Использование:"
+  kick: "%prefix% %usage-prefix% &c/kick &7[&cНик Игрока&7] &7[&cПричина&7]"
+  ban: "%prefix% %usage-prefix% &c/ban &7[&cНик Игрока&7] &7[&cПричина&7]"
+  tempban: "%prefix% %usage-prefix% &c/tempban &7[&cНик Игрока&7] &7[&cПричина&7]"
+  unban: "%prefix% %usage-prefix% &c/unban &7[&cНик Игрока&7]"
+  mute: "%prefix% %usage-prefix% &c/mute &7[&cНик Игрока&7] &7[&cПричина&7]"
+  tempmute: "%prefix% %usage-prefix% &c/tempmute &7[&cНик Игрока&7] &7[&cПричина&7]"
+  unmute: "%prefix% %usage-prefix% &c/unmute &7[&cНик Игрока&7]"
+  check: "%prefix% %usage-prefix% &c/check &7[&cНик Игрока&7]"
+
+broadcasts:
+  kick: "%prefix% &7Игрок &c%sender% &7кикнул игрока &c%target%&7 по причине &c%reason% &7- &c%description%"
+  ban: "%prefix% &7Игрок &c%sender% &7перманентно забанил игрока &c%target%&7 по причине &c%reason% &7- &c%description%"
+  tempban: "%prefix% &7Игрок &c%sender% &7временно забанил игрока &c%target%&7 по причине &c%reason% &7- &c%description%.
+  &7Дата автоматического разбана - &c%date%"
+  unban: "%prefix% &7Игрок &c%sender% &7разблокировал игрока &c%target%&7."
+  mute: "%prefix% &7Игрок &c%sender% &7перманентно замутил игрока &c%target%&7 по причине &c%reason% &7- &c%description%"
+  tempmute: "%prefix% &7Игрок &c%sender% &7временно замутил игрока &c%target%&7 по причине &c%reason% &7- &c%description%.
+  &7Дата автоматическоо размута - &c%date%"
+  unmute: "%prefix% &7Игрок &c%sender% &7размутил игрока &c%target%&7."
+
+screens:
+
+  kick:
+    - "&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝"
+    - ""
+    - "&c&lSERVER"
+    - ""
+    - "&7Печалька - вы были кикнуты с сервера &c:("
+    - ""
+    - "&7Вас кикнул: &c%sender%"
+    - "&7Причина: &c%reason% &7- &c%description%"
+    - ""
+    - "&7Вы можете обжаловать наказание на нашем форуме: &cmy.server.forum"
+    - ""
+    - "&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝"
+
+  ban:
+    - "&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝"
+    - ""
+    - "&c&lSERVER"
+    - ""
+    - "&7Печалька - вы были перманентно забанены на сервере &c:("
+    - ""
+    - "&7Вас забанил: &c%sender%"
+    - "&7Причина: &c%reason% &7- &c%description%"
+    - ""
+    - "&7Вы можете обжаловать наказание на нашем форуме: &cmy.server.forum"
+    - "&7Вы всегда можете приобрести разбан на нашем сайте: &cmy.server.site"
+    - ""
+    - "&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝"
+
+  tempban:
+    - "&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝"
+    - ""
+    - "&c&lSERVER"
+    - ""
+    - "&7Печалька - вы были временно забанены на сервере &c:("
+    - ""
+    - "&7Вас забанил: &c%sender%"
+    - "&7Причина: &c%reason% &7- &c%description%"
+    - "&7Дата автоматического разбана: &c%date%"
+    - ""
+    - "&7Вы можете обжаловать наказание на нашем форуме: &cmy.server.forum"
+    - "&7Вы всегда можете приобрести разбан на нашем сайте: &cmy.server.site"
+    - ""
+    - "&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝&c⏜&f⏝"
+
+  first-mute-screen: "%prefix% &7Вы были навсегда замучены игроком &c%sender%&7 по причине &c%reason% &7- &c%description%"
+  mute-screen: "%prefix% &7Вы не можете писать в чат, т.к были навсегда замучены игроком &c%sender%&7 по причине &c%reason% &7- &c%description%"
+
+  first-tempmute-screen: "%prefix% &7Вы были временно замучены игроком &c%sender%&7 по причине &c%reason% &7- &c%description%.
+  &7Дата автоматического размута - &c%date%"
+  tempmute-screen: "%prefix% &7Вы не можете писать в чат, т.к были временно замучены игроком &c%sender%&7 по причине &c%reason% &7- &c%description%.
+  &7Дата автоматического размута - &c%date%"
+
+sender:
+  status-perm-ban: "&cПерманентно забанен игроком &c%sender%. Причина - %reason%"
+  status-temp-ban: "&cВременно забанен игроком &c%sender%. Причина - %reason%. (будет разбанен %date%) "
+  status-unban: "&aНе заблокирован"
+  status-perm-mute: "&cПерманентно замучен игроком &c%sender%. Причина - %reason%"
+  status-temp-mute: "&cВременно замучен игроком &c%sender%. Причина - %reason%. (будет размучен %date%)"
+  status-unmute: "&aНе замучен"
+  reloaded: "%prefix% &7Плагин перезагружен"
+  kick: "%prefix% &7Вы кикнули игрока &c%target%&7."
+  ban: "%prefix% &7Вы перманентно заблокировали игрока &c%target%"
+  tempban: "%prefix% &7Вы временно заблокировали игрока &c%target%"
+  unban: "%prefix% &7Вы разблокировали игрока &c%target%"
+  mute: "%prefix% &7Вы перманентно замутили игрока &c%target%"
+  tempmute: "%prefix% &7Вы временно замутили игрока &c%target%"
+  unmute: "%prefix% &7Вы размутили игрока &c%target%"
+  check: "%prefix% &7Информация о игроке &c%player%
+  \n&7Статус блокировки: %status-ban%
+  \n&7Статус мута: %status-mute%"

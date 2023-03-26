@@ -1,0 +1,28 @@
+name: M0odiBans
+version: '${project.version}'
+main: M0odiBans.M0odiBans.M0odiBans
+api-version: 1.16
+prefix: M0odiBans
+authors: [ M0odi ]
+description: Punishment System For MineCraft Servers. Verified Version - 1.16.5.
+website: VK - M0odi, Telegram - M0odiX
+depend: [ LuckPerms ]
+commands:
+  mb:
+    description: main plugin command
+  kick:
+    description: kick
+  ban:
+    description: ban
+  tempban:
+    description: tempban
+  unban:
+    description: unban
+  mute:
+    description: mute
+  tempmute:
+    description: tempmute
+  unmute:
+    description: unmute
+  check:
+    description: check
