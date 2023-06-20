@@ -7,7 +7,7 @@ M0odiBans
 Контакты:
 Telegram: @M0odiX (https://t.me/M0odiX)
 Вконтакте: @M0odi (https://vk.com/m0odi)    
-Discord: @𝙆𝙖𝙢𝙞𝙣𝙖#6102
+Discord: @M0odi
 
 Буду рад любой поддержке:
  QIWI: 4890494762619799
